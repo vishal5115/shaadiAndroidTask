@@ -36,12 +36,13 @@ class DummyItemViewHolder(parent: ViewGroup) :
 
     override fun setupView(view: View) {
         view.accept.setOnClickListener {
-            view.accept.text = "Member accepted"
+            view.accept.text = itemView.context.getString(R.string.member_accepted)
             view.decline.visibility = View.GONE
+
         }
 
         view.decline.setOnClickListener {
-            view.decline.text = "Member declined"
+            view.decline.text = itemView.context.getString(R.string.member_declined)
             view.accept.visibility = View.GONE
         }
     }

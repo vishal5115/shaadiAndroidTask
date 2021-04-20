@@ -85,6 +85,10 @@ abstract class BaseAdapter<T : Any, VH : BaseItemViewHolder<T, out BaseItemViewM
         holder.bind(dataList[position])
     }
 
+    override fun getItemViewType(position: Int): Int {
+        return position
+    }
+
     fun appendData(dataList: List<T>) {
         val oldCount = itemCount
         this.dataList.addAll(dataList)
