@@ -1,4 +1,4 @@
-# shaadiAndroidTask
+# shaadiAndroidTask Built on MVVM
 
  1. Using MVVM Architecture with clean code
  2. Dagger2
